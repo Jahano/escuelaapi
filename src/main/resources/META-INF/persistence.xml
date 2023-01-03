@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="EscuelaPU" transaction-type="JTA">
+        <jta-data-source>jdbc/EscuelaPU</jta-data-source>
+
+        <class>com.champis.domain.TAlumno</class>
+        <class>com.champis.domain.TCalificacione</class>
+        <class>com.champis.domain.TMateria</class>
+
+    </persistence-unit>
+</persistence>
