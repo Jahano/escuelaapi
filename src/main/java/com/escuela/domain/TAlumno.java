@@ -1,4 +1,4 @@
-package com.champis.domain;
+package com.escuela.domain;
 
 import jakarta.persistence.*;
 

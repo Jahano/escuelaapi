@@ -1,4 +1,4 @@
-package com.champis.domain;
+package com.escuela.domain;
 
 import jakarta.persistence.*;
 
@@ -19,6 +19,11 @@ public class TUsuario {
     private Integer id;
 
     public TUsuario() {
+    }
+
+    public TUsuario(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public TUsuario(String username, String password, String correo) {

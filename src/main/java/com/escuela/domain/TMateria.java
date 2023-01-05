@@ -1,10 +1,12 @@
-package com.champis.domain;
+package com.escuela.domain;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "t_materias")
-
+@NamedQueries({
+        @NamedQuery(name="TMaterias.selectAllMaterias", query="SELECT m FROM TMateria m")
+})
 public class TMateria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

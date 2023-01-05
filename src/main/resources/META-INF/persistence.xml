@@ -6,9 +6,9 @@
     <persistence-unit name="EscuelaPU" transaction-type="JTA">
         <jta-data-source>jdbc/EscuelaPU</jta-data-source>
 
-        <class>com.champis.domain.TAlumno</class>
-        <class>com.champis.domain.TCalificacione</class>
-        <class>com.champis.domain.TMateria</class>
+        <class>com.escuela.domain.TAlumno</class>
+        <class>com.escuela.domain.TCalificacion</class>
+        <class>com.escuela.domain.TMateria</class>
 
     </persistence-unit>
 </persistence>
